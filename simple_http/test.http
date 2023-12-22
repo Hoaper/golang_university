@@ -1,0 +1,14 @@
+http://localhost:8080/
+Content-Type: application/json
+
+{
+  "message": "Hello!"
+}
+
+###
+http://localhost:8080
+Content-Type: application/json
+
+{
+  "some_other_field": "Sap!"
+}
