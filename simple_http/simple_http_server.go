@@ -5,6 +5,7 @@ import (
 	"fmt"
 	"log"
 	"net/http"
+	"reflect"
 )
 
 func mainPage(w http.ResponseWriter, r *http.Request) {
@@ -17,7 +18,7 @@ func mainPage(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	if value, exists := body["message"]; exists {
+	if value, exists := body["message"]; exists && reflect.TypeOf(value).Kind() == reflect.String {
 		fmt.Println(value)
 		resp["message"] = "Данные успешно приняты"
 		resp["status"] = "success"

@@ -2,7 +2,15 @@ http://localhost:8080/
 Content-Type: application/json
 
 {
-  "message": "Hello!"
+  "message": 1
+}
+
+###
+http://localhost:8080/
+Content-Type: application/json
+
+{
+  "message": "hello!"
 }
 
 ###
