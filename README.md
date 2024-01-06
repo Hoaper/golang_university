@@ -10,9 +10,10 @@
 - <a href="https://github.com/Hoaper/express_frontend_university#getting-started">Frontend</a>
 - Backend:
 ```shell
-go build main
+go build github.com/Hoaper/golang_university
 ```
 
 ### Used technologies:
-- Frontend: Next.JS, JWT, TailwindCSS, RESTApi
+- General: JWT, MongoDB
+- Frontend: Next.JS, TailwindCSS, RESTApi
 - Backend: go, Gorm
